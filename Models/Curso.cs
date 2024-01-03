@@ -29,9 +29,13 @@ namespace Módulo_2.Models
         public void ListarAlunos()
         {
                 Console.WriteLine($"Alunos do curso de {Nome}");
-                foreach (Pessoa aluno in Alunos)
-                {
-                    Console.WriteLine(aluno.NomeCompleto);
+                for (int count = 0; count < Alunos.Count; count++)
+                {   
+                    // CONCATENAÇÃO DE STRINGS
+                    // string texto = "Nº " + count + " - " + Alunos[count].NomeCompleto;
+                    // INTERPOLAÇÃO DE STRINGS
+                    string texto = $"Nº {count+1} - {Alunos[count].NomeCompleto}";
+                    Console.WriteLine(texto);
                 }
         }
     }
