@@ -1,6 +1,77 @@
 ﻿using Módulo_2.Models;
 using System.Globalization;
 
+/*
+//         chave   valor
+Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// chave = valores únicos
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
+
+// foreach(KeyValuePair<string, string> item in estados)
+foreach(var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+Console.WriteLine("----------------------");
+
+// tudo que fizer no dicionário, terá como referência a chave
+estados.Remove("BA");
+estados["SP"] = "São Paulo - valor alterado";
+
+foreach(var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+string chave = "BA";
+Console.WriteLine($"Verificando o elemento: {chave}");
+
+if (estados.ContainsKey(chave))
+{
+    Console.WriteLine($"Valor existente: {chave}");
+}
+else
+{
+    Console.WriteLine($"O valor não existe. É seguro adicionar a chave: {chave}");
+}
+
+Console.WriteLine(estados["MG"]); // acessando o valor no dicionário
+*/
+
+
+/*
+// COLEÇÕES - PILHA
+// LIFO - Last in, first out
+
+Stack<int> pilha = new Stack<int>();
+
+pilha.Push(4);
+pilha.Push(6);
+pilha.Push(8);
+pilha.Push(10);
+
+foreach(int item in pilha)
+{
+    Console.WriteLine(item);
+}
+
+// o último que entrou é o primeiro a sair
+Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+
+pilha.Push(20);
+
+foreach(int item in pilha)
+{
+    Console.WriteLine(item);
+}
+*/
+
+
+/*
 // COLEÇÕES - QUEUE
 // FIFO = First in, first out
 
@@ -23,10 +94,7 @@ foreach(int item in fila)
 {
     Console.WriteLine(item);
 }
-
-
-
-
+*/
 
 
 /*
